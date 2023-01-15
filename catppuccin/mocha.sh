@@ -19,6 +19,6 @@ fi
 output_file="remapped_colors_$(basename "$1")"
 
 # Apply the color palette
-convert "$1" -colorspace RGB -dither None -remap palette.png "$output_file"
+convert "$1" -colorspace RGB -dither None -remap mocha.png "$output_file"
 
 echo "Image has been processed and exported as $output_file"
